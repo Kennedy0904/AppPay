@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('NeptuneLiteApi_V2.04.00_20180329.jar'))
