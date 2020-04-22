@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asiapay.paydollar.apppay">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="com.pax.permission.PRINTER"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/apppay_logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.asiapay.paydollar.apppay.Login"
+            android:clearTaskOnLaunch="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.asiapay.paydollar.apppay.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.asiapay.paydollar.apppay.ScanQRPayment_2"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.PresentQRPayment_3"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.ScanQR_Failure"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.CardPayment_2"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.CardPayment_EnterPin"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.CardPayment_3"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.CardPayment_Sign"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.CardPayment_Success"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.CardPayment_Failure"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.CardPayment_ManualKeyIn"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.MobilePayment_2"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.MobilePayment_3"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.MobilePayment_Success"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.MobilePayment_Failure"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.asiapay.paydollar.apppay.HistoryDetails"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.asiapay.paydollar.apppay.History_List"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.Scanner.CameraCapture"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.ScanQR_Success"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.Printer.BluetoothSelect"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.asiapay.paydollar.apppay.DialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.asiapay.paydollar.apppay.DialogSendReceipt"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name="com.asiapay.paydollar.apppay.DialogSendOrder"
+            android:theme="@style/Theme.Transparent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.asiapay.paydollar.apppay.EnterAmount"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.PresentQRPayment_2"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.SummaryReport"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.TransactionReport"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.RefundReport"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.asiapay.paydollar.apppay.RequestRefundReport"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.asiapay.paydollar.apppay.VoidReport"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.asiapay.paydollar.apppay.TestConnection"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.asiapay.paydollar.apppay.StationeryOrder"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.asiapay.paydollar.apppay.PresentQR_result"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.asiapay.paydollar.apppay.PresentQR_failResult"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.asiapay.paydollar.apppay.PaymentTimeoutSetting"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.asiapay.paydollar.apppay.Terms"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

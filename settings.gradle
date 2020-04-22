@@ -1,0 +1,2 @@
+include ':app', ':jsoup-1.11.3', ':pullToRefreshListView', ':QrDataGenerator-2.2.0', ':commons-lang3-3.7', ':NeptuneLiteApi_V2.04.00_20180329'
+project(':pullToRefreshListView').projectDir = new File('app/libs/pullToRefreshListView')

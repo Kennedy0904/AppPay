@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="light_font">#4c4c4c</color>
+    <color name="gray">#626262</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="text_shadow_white">#ffffff</color>
+    <color name="grey">#626262</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_blue">#0f527f</color>
+    <color name="gray2">#787878</color>
+    <color name="green">#0e9503</color>
+    <color name="normal"> #4c4c4c</color>
+    <color name="red"> #af1212</color>
+    <color name="btn_blue">#207ea1</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="orange">#CD6600</color>
+</resources>
